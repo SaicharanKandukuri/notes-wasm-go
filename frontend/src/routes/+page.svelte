@@ -35,7 +35,7 @@
   async function saveNote() {
 
     if (SignedIn) {
-      const url = siteURL+"/api/cors-proxy?url=https://github.com/" + Repo;
+      const url = siteURL+"api/cors-proxy?url=https://github.com/" + Repo;
       if (!clonedOnce) {
         const clone = await toast.promise(
           //@ts-ignore
@@ -125,7 +125,7 @@
       "/" +
       Branch +
       "/history.json";
-    const repourl = siteURL+"/api/cors-proxy?url=https://github.com/" + Repo;
+    const repourl = siteURL+"api/cors-proxy?url=https://github.com/" + Repo;
 
     // fetch file
     /// if error, return
