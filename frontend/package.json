@@ -45,6 +45,7 @@
     "@bytemd/plugin-gfm": "^1.21.0",
     "@bytemd/plugin-highlight-ssr": "^1.21.0",
     "@bytemd/plugin-math-ssr": "^1.21.0",
+    "@bytemd/plugin-mermaid": "^1.21.0",
     "@popperjs/core": "^2.11.8",
     "@zerodevx/svelte-toast": "^0.9.5",
     "bytemd": "^1.21.0",
