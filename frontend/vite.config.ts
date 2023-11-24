@@ -6,7 +6,7 @@ import topLevelAwait from "vite-plugin-top-level-await";
 export default defineConfig({
   plugins: [sveltekit(), wasm(), topLevelAwait()],
   optimizeDeps: {
-    exclude: ["bytemd"],
+    exclude: ["bytemd", "@bytemd/plugin-mermaid"],
   },
   resolve: {
     alias: {
