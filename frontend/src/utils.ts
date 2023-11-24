@@ -11,4 +11,5 @@ const spice = {
   encryptSecret: import.meta.env.VITE_APP_ENCRYPT_SECRET.toString(),
 };
 
-export { clientInfo, clientPub, spice };
+
+export { clientInfo, clientPub, spice, vercelUrl };

@@ -20,6 +20,7 @@
   let SignedIn = false;
   let user = "";
   let user_email = "";
+  let siteURL: string;
 
   function handleChange(e: { detail: { value: string } }) {
     note = e.detail.value;
@@ -32,11 +33,9 @@
 
   let clonedOnce = false;
   async function saveNote() {
-    // const url = String(clientPub.repoURL) <= this wont work (e: not implemented on js at syscall/js.valueNew (was)
-    // using json as a workaround
 
     if (SignedIn) {
-      const url = "http://localhost:8081/?https://github.com/" + Repo;
+      const url = siteURL+"/api/cors-proxy?url=https://github.com/" + Repo;
       if (!clonedOnce) {
         const clone = await toast.promise(
           //@ts-ignore
@@ -126,7 +125,7 @@
       "/" +
       Branch +
       "/history.json";
-    const repourl = "http://localhost:8081/?https://github.com/" + Repo;
+    const repourl = siteURL+"/api/cors-proxy?url=https://github.com/" + Repo;
 
     // fetch file
     /// if error, return
@@ -223,7 +222,8 @@
   onMount(async () => {
     // FEATURE: load notes from local storage
     note = localStorage.getItem("note") || "";
-
+    siteURL = window.location.href;
+    
     // FEATURE: check if user is signed in
     const code = new URLSearchParams(window.location.search).get("code");
 
