@@ -6,6 +6,7 @@ import highlight from "@bytemd/plugin-highlight-ssr";
 import math from "@bytemd/plugin-math-ssr";
 import gemoji from "@bytemd/plugin-gemoji";
 import breaks from "@bytemd/plugin-breaks";
+import mermaid from "@bytemd/plugin-mermaid";
 import frontmatter from "@bytemd/plugin-frontmatter";
 import "bytemd/dist/index.css"; // styles for bytemd editor
 import "github-markdown-css/github-markdown-light.css"; // styles for markdown preview
@@ -48,6 +49,7 @@ const plugins = [
   gemoji(),
   breaks(),
   frontmatter(),
+  mermaid(),
 ];
 
 export { plugins };
