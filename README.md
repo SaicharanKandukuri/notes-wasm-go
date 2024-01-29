@@ -1,6 +1,6 @@
-
-
 # Notes WASM GO
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FSaicharanKandukuri%2Fnotes-wasm-go.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FSaicharanKandukuri%2Fnotes-wasm-go?ref=badge_shield)
+
 An experiment project ( part of an InternShip ) to see how far we can push WASM with GO to use it as a note taking app integrated with `git` and encryption logic in wasm to store notes in a secure way to a GitHub repo.
 
 ## Runing locally
@@ -366,3 +366,7 @@ In the above example, we import the necessary packages and define an example fun
 The main() function registers the Go functions as callbacks to be called from JavaScript and then calls the exampleUsage() function. Finally, the program blocks indefinitely using the select {} statement to keep the WebAssembly module running.
 
 This example demonstrates the basic usage of the main package for a Go program intended to be executed as a WebAssembly module.
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FSaicharanKandukuri%2Fnotes-wasm-go.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FSaicharanKandukuri%2Fnotes-wasm-go?ref=badge_large)
